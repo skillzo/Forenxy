@@ -13,3 +13,13 @@ function Logo() {
 }
 
 export default Logo;
+
+export const LogoWithTheme = () => {
+  return (
+    <img
+      src={logowithname}
+      alt=""
+      className="w-[50px] h-[50px] sm:w-[30px] sm:h-[30px] md:w-[70px]  md:h-[70px] object-contain mx-auto"
+    />
+  );
+};
