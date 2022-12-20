@@ -6,7 +6,7 @@ button {
 
 .button1 {
   background-color: #00859b;
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(255, 255, 255, 0.95);
 }
 
 .button1:hover {
@@ -17,4 +17,18 @@ button {
 }
 .button1:disabled {
   background-color: #cce7eb;
+}
+.form input {
+  border: 1px solid #d0d5dd;
+  outline: none;
+  padding: 0.6em 1em;
+  background-color: transparent;
+  font-size: 0.95em;
+}
+
+.form input:focus,
+.form input:active {
+  border: 2px solid #99ced7;
+  box-shadow: 0 0 3px 1px #99ced7;
+  background-color: transparent;
 }

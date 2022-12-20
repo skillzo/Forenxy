@@ -5,9 +5,10 @@ import facebook from "../../Assest/Img/Facebook.png";
 import { Checkboxes } from "../../Button/Buttons";
 import "./signin.css";
 
+// Sign Up page
 function SignIn() {
   return (
-    <div className="w-full  lg:w-[20%] md:w-[45%] space-y-[2em] my-[5vh] md:my-[10vh] h-[90vh] md:h-[80vh]  lg:text-sm  ">
+    <div className="select-none w-full  lg:w-[20%] md:w-[45%] space-y-[2em] my-[5vh] md:my-[10vh] h-[90vh] md:h-[80vh]  lg:text-sm mx-auto  ">
       <div className="forenxy-logo">
         <Logo />
       </div>
@@ -40,15 +41,19 @@ function SignIn() {
             className="rounded-lg"
           />
         </div>
+        {/* forgot Password */}
         <div className="flex justify-between items-center ">
           <div className="flex items-center w-[50%]">
             <Checkboxes />
 
-            <p className="text-sm ">Remember for 30days</p>
+            <p className="text-sm ">Remember for 30 days</p>
           </div>
-          <p className="font-bold text-[#006A7C]">Forgot password</p>
+          <p className="font-bold text-[#006A7C] active:text-[#99CED7]">
+            Forgot password
+          </p>
         </div>
 
+        {/* buttons */}
         <div className="space-y-[2em] ">
           <button
             type="submit"
@@ -57,7 +62,9 @@ function SignIn() {
           >
             Sign in
           </button>
-          <p className="text-center text-[#475467] font-bold">Or log in with</p>
+          <p className="text-center text-[#475467] font-medium ">
+            Or log in with
+          </p>
           <div className="space-y-[0.6em]">
             <div className="flex justify-center items-center space-x-2 border rounded-lg  mx-auto p-[0.4em] active:bg-[#f2f5f8]">
               <img
@@ -79,8 +86,9 @@ function SignIn() {
         </div>
       </form>
 
+      {/* dont have an account */}
       <p className="text-center">
-        Dont't have an account?{" "}
+        Don't have an account?{" "}
         <span className="font-bold text-[#006A7C]">Sign up</span>
       </p>
     </div>
